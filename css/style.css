@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+}
+
+#coinTable th,
+td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+#coinTable th {
+  background-color: #0c0c0c;
+  color: #fff;
+}
+#coinTable tr {
+  border-bottom: 2px solid #ddd;
+}
+
+#coinTable tr:hover {
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+/* Newsfeed css */
+#news {
+   height: 500px;
+   margin-bottom: 10px;
+   padding: 0px;
+   border: 2px solid #0c0c0c;
+}
+
+#news div {
+   height: 50px;
+   border-bottom: 2px solid #ddd;
+   overflow: hidden;
+}
+
+#news div:nth-child(10) {
+   border: none;
+}
+
+#news img {
+   margin: 10px 5px 5px 5px;
+   height: 26px;
+   width: 26px;
+   float: left;
+}
+
+#news h6 {
+   margin: 14px 0px 0px 40px;
+   padding-right: 14px
+}
+
+#news h6.centered {
+   margin: 5px 0px 0px 40px;
+}
