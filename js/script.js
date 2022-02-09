@@ -14,9 +14,9 @@ async function fetchTable() {
       let changePercent = +coin.changePercent24Hr;
       const tempCoinHTNL = `
       <tr>
+      <td>${name}</td>
+      <td>${symbol}</td>
          <td>${rank}</td>
-         <td>${symbol}</td>
-         <td>${name}</td>
          <td>${price}</td>
          <td>${cap}</td>
          <td>${changePercent}</td>
