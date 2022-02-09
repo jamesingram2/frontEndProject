@@ -1,0 +1,24 @@
+h1 {
+   text-align: center;
+}
+
+#coinTable th, td {
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: left;
+}
+
+#coinTable th {
+   background-color: #0c0c0c;
+   color: #fff;
+}
+#coinTable tr {
+   border-bottom: 2px solid #ddd;
+}
+
+#coinTable tr:hover {
+   background-color: #0c0c0c;
+   color: #fff;
+}
