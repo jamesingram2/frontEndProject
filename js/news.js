@@ -5,27 +5,28 @@ async function fetchNews() {
     const newsDiv = document.getElementById('news');
     let l = 10
     for (i = 0; i < l; i++) {
-        if (news[i].currencies == undefined) {
-            l++
-            i++
-        }
-        if (news[i].title.length > 70) {
-            let tempArticle = `
-            <div>
-                <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${news[i].currencies[0].code.toLowerCase()}.png">
-                <h6 class="centered">${news[i].title}</h6>
-            </div>
-            `
-            newsDiv.innerHTML += tempArticle
+        if (news[i].currencies != undefined) {
+            if (news[i].title.length > 70) {
+                let tempArticle = `
+                <div>
+                    <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${news[i].currencies[0].code.toLowerCase()}.png">
+                    <h6 class="centered">${news[i].title}</h6>
+                </div>
+                `
+                newsDiv.innerHTML += tempArticle
+            } else {
+                let tempArticle = `
+                <div>
+                    <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${news[i].currencies[0].code.toLowerCase()}.png">
+                    <h6>${news[i].title}</h6>
+                </div>
+                `
+                newsDiv.innerHTML += tempArticle
+            }
         } else {
-            let tempArticle = `
-            <div>
-                <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${news[i].currencies[0].code.toLowerCase()}.png">
-                <h6>${news[i].title}</h6>
-            </div>
-            `
-            newsDiv.innerHTML += tempArticle
+            l++
         }
+        
     }
 }
 fetchNews();
