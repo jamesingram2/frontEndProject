@@ -24,10 +24,48 @@
       </div>
       <div class="row">
          <div class="col" id="exchange">
-            <h3>Exchange calculator goes here...</h3>
+            <div class="container">
+               <div class="main">
+                  <div class="form-group">
+                     <label for="currAmt">
+                     Amount to Convert : 
+                  </label>
+                  <input type="number" class="form-control searchBox" placeholder="0.00" id="currAmt" name="currAmt">
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text">From</span>
+                           </div>
+                           <select id="coin1" name="coin1" class="form-control from">
+                              <option value="">Select One …</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text">To</span>
+                           </div>
+                              <select id="coin2" name="coin2" class="form-control to">
+                                 <option value="">Select One …</option>
+                              </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center">
+                     <!-- convert button -->
+                     <button id="calculate" class="btn btn-secondary convert m-2" type="submit">Convert</button>
+                     <!-- reset button -->
+                     <button type="reset" id="reset" class="btn btn-secondary m-2">Reset</button>
+                  </div>
+               </div>
+               <div id="calculatorResults" class="text-center finalAmount">
+               </div>
+            </div>
          </div>
          <div class="col" id="news">
-            
          </div>
       </div>
       <div class="row">
