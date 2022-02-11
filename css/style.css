@@ -8,6 +8,10 @@ h1 {
   margin: 20px;
 }
 
+h1 img {
+   height: 70px;
+}
+
 #exchange,
 #news,
 #dataTable,
