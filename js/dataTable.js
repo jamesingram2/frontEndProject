@@ -1,4 +1,5 @@
-export async function fetchTable() {
+export function tableFunction() {
+   async function fetchTable() {
    const coin1El = document.getElementById("coin1");
    const coin2El = document.getElementById("coin2");
    const coinTableDIV = document.getElementById('coinTable');
@@ -27,5 +28,18 @@ export async function fetchTable() {
       coinTableDIV.innerHTML += tempCoinHTNL;
       coin1El.innerHTML += `<option value="${symbol}">${symbol}</option>`;
       coin2El.innerHTML += `<option value="${symbol}">${symbol}</option>`;
+
    });
 };
+fetchTable();
+const x = document.getElementsByClassName("change");
+setTimeout(function() {
+   for (let items of x) {
+      if (+items.innerHTML < 0) {
+         items.style.color="red";
+      } else {
+         items.style.color="green";
+      }
+   }
+}, 500)
+}
