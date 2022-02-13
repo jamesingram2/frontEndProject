@@ -12,15 +12,11 @@ function calcFunction() {
     let coin2 = document.getElementById('coin2').value;
     let coin2Price = document.getElementById(coin2).innerHTML;
     let finalValue = "";
-    
-    if (currAmt <= 0) {
-        alert('Please enter a valid currency amount');
-    } else {
-        if (coin1 === coin2) {
-            alert('Please select two different currencies to compare');
-        } else {
-           finalValue = ((+coin1Price / +coin2Price) * +currAmt).toFixed(4);
-           calculatorResultsDiv.innerHTML = `<h2>${currAmt} ${coin1.toUpperCase()} = ${finalValue} ${coin2.toUpperCase()}</h2>`;
-        }
+
+    if (coin1 !== coin2) {
+        finalValue = ((+coin1Price / +coin2Price) * +currAmt).toFixed(8);
+        calculatorResultsDiv.innerHTML = `<h2>${currAmt} ${coin1.toUpperCase()} = ${finalValue} ${coin2.toUpperCase()}</h2>`;
+    } else  {
+        alert(`Please select two different currencies`);
     }
 }

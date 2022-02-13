@@ -21,13 +21,22 @@ async function fetchTable() {
          <td>${rank}</td>
          <td id="${symbol}">${price}</td>
          <td>${cap}</td>
-         <td>${changePercent}</td>
+         <td class="change">${changePercent}</td>
       </tr>
       `;
       coinTableDIV.innerHTML += tempCoinHTNL;
       coin1El.innerHTML += `<option value="${symbol}">${symbol}</option>`;
       coin2El.innerHTML += `<option value="${symbol}">${symbol}</option>`;
    });
+   const x = document.getElementsByClassName("change")
+   for (items of x) {
+      let changePlusMinus = items.innerHTML;
+      if (+changePlusMinus < 0) {
+         items.style.color = "red";
+      } else {
+         items.style.color = "green";
+      }
+   }
 }
 fetchTable();
 
