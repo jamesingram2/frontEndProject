@@ -6,13 +6,13 @@ body {
 
 h1 {
   background-color: #eee;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 20px;
   text-align: center;
 }
 
 h1 img {
-   height: 100px;
+   height: 75px;
 }
 
 h3 {
