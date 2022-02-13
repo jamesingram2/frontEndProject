@@ -13,8 +13,11 @@ export function tableFunction() {
       let symbol = coin.symbol;
       let name = coin.name;
       let price = +coin.priceUsd;
+      price = price.toFixed(2);
       let cap = +coin.marketCapUsd;
+      cap = cap.toFixed(2);
       let changePercent = +coin.changePercent24Hr;
+      changePercent = changePercent.toFixed(2);
       const tempCoinHTNL = `
       <tr>
          <td class="coinName">${name}</td>
