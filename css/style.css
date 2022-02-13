@@ -115,8 +115,8 @@ label {
    margin: 5px 0px 0px 40px;
 }
 
-#graphs {
-   overflow: hidden;
+#graphs img {
+   width: 100%;
 }
 
 /* Ticker Style */
