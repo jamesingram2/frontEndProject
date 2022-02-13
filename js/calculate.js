@@ -13,10 +13,14 @@ function calcFunction() {
     let coin2Price = document.getElementById(coin2).innerHTML;
     let finalValue = "";
 
-    if (coin1 !== coin2) {
-        finalValue = ((+coin1Price / +coin2Price) * +currAmt).toFixed(8);
-        calculatorResultsDiv.innerHTML = `<h2>${currAmt} ${coin1.toUpperCase()} = ${finalValue} ${coin2.toUpperCase()}</h2>`;
-    } else  {
-        alert(`Please select two different currencies`);
+    if (currAmt <= 0) {
+        alert(`Please enter an amount to convert`);
+    } else {
+        if (coin1 !== coin2) {
+            finalValue = ((+coin1Price / +coin2Price) * +currAmt).toFixed(5);
+            calculatorResultsDiv.innerHTML = `<h2>${currAmt} ${coin1.toUpperCase()} = ${finalValue} ${coin2.toUpperCase()}</h2>`;
+        } else  {
+            alert(`Please select two different currencies`);
+        }
     }
 }
