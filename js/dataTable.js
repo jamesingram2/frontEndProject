@@ -44,5 +44,5 @@ setTimeout(function() {
          items.style.color="green";
       }
    }
-}, 500)
+}, 800)
 }
