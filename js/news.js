@@ -1,10 +1,10 @@
-async function fetchNews() {
+export async function fetchNews() {
     const response = await fetch("https://cryptopanic.com/api/v1/posts/?auth_token=eb162bf88cac2ab2f4c85aff1ceceac5776756a3&type=news&filter=hot&public=true");
     const data = await response.json();
     const news = data.results
     const newsDiv = document.getElementById('news');
     let l = 10
-    for (i = 0; i < l; i++) {
+    for (let i = 0; i < l; i++) {
         if (news[i].currencies != undefined) {
             if (news[i].title.length > 70) {
                 let tempArticle = `
@@ -29,4 +29,3 @@ async function fetchNews() {
         
     }
 }
-fetchNews();
