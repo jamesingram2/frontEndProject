@@ -16,6 +16,7 @@ h1 img {
 }
 
 h3 {
+   margin-top: 10px;
    text-align: center;
 }
 
@@ -139,6 +140,11 @@ label {
 
 #links a {
    text-decoration: none;
+}
+
+#links p {
+   font-size: 0.8rem;
+   text-align: center;
 }
 
 /* Ticker Style */
