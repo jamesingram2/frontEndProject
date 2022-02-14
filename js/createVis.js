@@ -7,7 +7,7 @@ export function tableOnClick() {
          let coinKey = this.cells[1].innerText;
          let headingName = this.cells[0].innerText;
          visEl.innerHTML = `
-            <h3>${headingName} Historical Data</h3>
+            <h3><i class="bi bi-graph-up"></i> ${headingName} Historical Data</h3>
             <img src="./img/${coinKey.toLowerCase()}.png">
          `;
       })
