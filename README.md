@@ -61,8 +61,7 @@ See LICENSE.txt for more information.
 
 (back to top)
 
-Contact
-Your Name - James Ingram jamesingram.tech@gmail.com
+Contact- James Ingram jamesingram.tech@gmail.com
 Jesse Henley xwritecodex@gmail.com
 Nina Moyer  ninacoral@gmail.com
 
