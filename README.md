@@ -65,8 +65,7 @@ Contact- James Ingram jamesingram.tech@gmail.com
 Jesse Henley xwritecodex@gmail.com
 Nina Moyer  ninacoral@gmail.com
 
-Project Link: https://github.com/jamesingram2
-/frontEndProject
+Project Link: https://github.com/jamesingram2/frontEndProject
 
 
 (back to top)
