@@ -1,31 +1,7 @@
 export async function fetchNews() {
-    const response = await fetch("https://cryptopanic.com/api/v1/posts/?auth_token=eb162bf88cac2ab2f4c85aff1ceceac5776756a3&type=news&filter=hot&public=true");
-    const data = await response.json();
-    const news = data.results
     const newsDiv = document.getElementById('news');
-    let l = 10
-    for (let i = 0; i < l; i++) {
-        if (news[i].currencies != undefined) {
-            if (news[i].title.length > 70) {
-                let tempArticle = `
-                <div>
-                    <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${news[i].currencies[0].code.toLowerCase()}.png">
-                    <h6 class="centered">${news[i].title}</h6>
-                </div>
-                `
-                newsDiv.innerHTML += tempArticle
-            } else {
-                let tempArticle = `
-                <div>
-                    <img src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${news[i].currencies[0].code.toLowerCase()}.png">
-                    <h6>${news[i].title}</h6>
-                </div>
-                `
-                newsDiv.innerHTML += tempArticle
-            }
-        } else {
-            l++
-        }
-        
-    }
+    let newsFrame = `
+    <iframe id="newsframe" scrolling="yes" allowtransparency="true" src="https://cryptopanic.com/widgets/news/?bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=6a6969&amp;header_text_color=FFFFFF&amp;link_color=0091C2&amp;news_feed=trending&amp;posts_limit=10&amp;text_color=333333&amp;title=Latest%20News" width="100%" height="500px" frameborder="0"></iframe>
+    `
+    newsDiv.innerHTML = newsFrame
 }
