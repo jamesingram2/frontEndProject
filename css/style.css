@@ -10,14 +10,15 @@ i {
 
 h1 {
   background-color: #fff;
-  font-size: 3.5rem;
+  font-size: 5.5vw;
   margin-top: 20px;
   text-align: center;
 }
 
 h1 img {
-   height: 75px;
+   height: 7.5vw;
    display: inline-block;
+   margin-bottom: 8px;
 }
 
 h3 {
