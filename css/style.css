@@ -105,36 +105,6 @@ label {
   color: #fff;
 }
 
-/* Newsfeed css */
-#news {
-   padding: 0px;
-}
-
-#news div {
-   border-bottom: 2px solid #ddd;
-   background-color:#fff;
-}
-
-#news div:nth-child(10) {
-   border: none;
-}
-
-#news img {
-   margin: 10px 5px 5px 5px;
-   height: 26px;
-   width: 26px;
-   float: left;
-}
-
-#news h6 {
-   margin: 14px 0px 0px 40px;
-   padding-right: 14px
-}
-
-#news h6.centered {
-   margin: 5px 0px 0px 40px;
-}
-
 #graphs {
    height: auto;
 }
