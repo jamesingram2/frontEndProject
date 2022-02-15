@@ -135,7 +135,6 @@ label {
    overflow: hidden; /* HIDE SCROLL BAR */
    background: #fff;
    margin: 5px;
-
 }
 
    /* (B) MOVING TICKER WRAPPER */
@@ -153,8 +152,8 @@ label {
    /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
    /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
 @keyframes tickerh {
-   0% { transform: translate3d(50%, 0, 0); }
-   100% { transform: translate3d(-50%, 0, 0); }
+   0% { transform: translate3d(33%, 0, 0); }
+   100% { transform: translate3d(-500%, 0, 0); }
 }
-.hmove { animation: tickerh linear 15s infinite; }
+.hmove { animation: tickerh linear 75s infinite; }
 .hmove:hover { animation-play-state: paused; }
