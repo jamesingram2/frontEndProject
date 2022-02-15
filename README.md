@@ -20,7 +20,7 @@ Go to app or site and indulge in all the latest crypto news.
 
 
 
-Get a free API Key at https://example.com
+Get a free API Key at https://apipheny.io/free-api/
 Clone the repo
 git clone https://github.com/jamesingram2/frontEndProject
 Install NPM packages
