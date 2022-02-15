@@ -7,6 +7,7 @@ body {
 i {
    font-size: 1.5rem;
 }
+
 h1 {
   background-color: #fff;
   font-size: 3.5rem;
@@ -16,6 +17,7 @@ h1 {
 
 h1 img {
    height: 75px;
+   display: inline-block;
 }
 
 h3 {
@@ -70,7 +72,7 @@ label {
 #dataTable {
    height: 365px;
    overflow: auto;
-   padding: 10px;
+   padding: 0px;
 }
 
 #coinTable table {
@@ -93,6 +95,8 @@ label {
    position: sticky;
    top: 0;
    z-index: 2;
+   padding-top: 6px;
+   padding-bottom: 6px;
 }
 
 #coinTable tr {

@@ -21,7 +21,7 @@ export function calculate() {
                 finalValue = ((+coin1Price / +coin2Price) * +currAmt).toFixed(5);
                 calculatorResultsDiv.innerHTML = `<h2>${currAmt} ${coin1.toUpperCase()} = ${finalValue} ${coin2.toUpperCase()}</h2>`;
                 let currencies = `currencies=${coin1}%2C${coin2}&amp;`
-                document.getElementById('newsframe').src = `https://cryptopanic.com/widgets/news/?bg_color=FFFFFF&amp;${currencies}font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=0c0c0c&amp;link_color=0091C2&amp;news_feed=trending&amp;posts_limit=7&amp;text_color=0c0c0c&amp;title=CryptoPanic%20News
+                document.getElementById('newsframe').src = `https://cryptopanic.com/widgets/news/?bg_color=FFFFFF&amp;${currencies}font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;news_feed=trending&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=CryptoPanic%20News
                 `
             } else  {
                 alert(`Please select two different currencies`);
