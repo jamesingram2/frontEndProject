@@ -13,11 +13,11 @@ export function tableFunction() {
       let symbol = coin.symbol;
       let name = coin.name;
       let price = +coin.priceUsd;
-      price = price.toFixed(2);
+      price = price.toFixed(4);
       let cap = +coin.marketCapUsd;
-      cap = cap.toFixed(2);
+      cap = cap.toFixed(4);
       let changePercent = +coin.changePercent24Hr;
-      changePercent = changePercent.toFixed(2);
+      changePercent = changePercent.toFixed(4);
       const tempCoinHTNL = `
       <tr>
          <td class="coinName">${name}</td>
@@ -40,8 +40,10 @@ setTimeout(function() {
    for (let items of x) {
       if (+items.innerHTML < 0) {
          items.style.color="red";
+         items.innerHTML += ` <i class="bi bi-arrow-down-short"></i>`
       } else {
          items.style.color="green";
+         items.innerHTML += `<i class="bi bi-arrow-up-short"></i>`
       }
    }
 }, 800)

@@ -74,14 +74,12 @@ label {
    height: 365px;
    overflow: auto;
    padding: 0px;
+   
 }
 
-#coinTable table {
-   width: 50%;
-}
 #coinTable th,
 #coinTable td {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -129,7 +127,6 @@ label {
 }
 
 #footer p {
-   font-size: 0.8rem;
    text-align: center;
 }
 
@@ -140,6 +137,7 @@ label {
    overflow: hidden; /* HIDE SCROLL BAR */
    background: #fff;
    margin: 5px;
+   margin-bottom: 20px;
 }
 
    /* (B) MOVING TICKER WRAPPER */
