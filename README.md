@@ -27,13 +27,11 @@ Install NPM packages
 npm install
 Enter your API in config.js
 const API_KEY = 'ENTER YOUR API';
-(back to top)
 
 
 
 For more examples, please refer to the Documentation
 
-(back to top)
 
 Roadmap
  Add Changelog
@@ -43,7 +41,6 @@ Roadmap
 
 See the open issues for a full list of proposed features (and known issues).
 
-(back to top)
 
 
 
@@ -54,12 +51,12 @@ Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
-(back to top)
+
 
 License
 See LICENSE.txt for more information.
 
-(back to top)
+
 
 Contact- James Ingram jamesingram.tech@gmail.com
 Jesse Henley xwritecodex@gmail.com
