@@ -4,15 +4,11 @@ body {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-i {
-   font-size: 1.5rem;
-}
-
 h1 {
-  background-color: #fff;
-  font-size: 5.5vw;
-  margin-top: 20px;
-  text-align: center;
+   background-color: #fff;
+   font-size: 5.5vw;
+   margin-top: 20px;
+   text-align: center;
 }
 
 h1 img {
@@ -27,6 +23,10 @@ h3 {
    text-align: left;
 }
 
+h3 i {
+   font-size: 1.5rem;
+}
+
 #exchange,
 #dataTable,
 #graphs,
@@ -35,7 +35,7 @@ h3 {
    background-color: #fff;
    color: #0c0c0c;
    margin-left: 10px;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
 }
 
 .main {
@@ -63,23 +63,26 @@ label {
  
 .finalAmount h2 {
    font-size: 2.25rem;
-   color: green;
+   color: #0091C2;
 }
 
 #calculatorResults {
-   /* margin-top: 50px; */
+   margin-top: 50px;
    margin-bottom: 20px;
 }
-#dataTable {
-   height: 365px;
-   overflow: auto;
-   padding: 0px;
-   
+
+#coinTable {
+   width: 100%;
 }
+
+#coinTable th {
+   background-color: #0c0c0c;
+   color: #fff;
+}  
 
 #coinTable th,
 #coinTable td {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -87,27 +90,19 @@ label {
   text-align: left;
 }
 
-#coinTable th {
-  background-color: #6a6969;
-  color: #fff;
-  position: -webkit-sticky;
-   position: sticky;
-   top: 0;
-   z-index: 2;
-   padding-top: 6px;
-   padding-bottom: 6px;
-}
-
-#coinTable tr {
-  border-bottom: 2px solid #ddd;
-}
-
 #coinTable tr:hover {
-  background-color: #0c0c0c;
+  background-color: #ddd;
   font-weight:bolder;
-  color: #fff;
+  color: #0c0c0c;
 }
 
+#coinTable i {
+   font-size: 0.7rem;
+}
+
+.page-link {
+   color: #0091C2;
+}
 #graphs {
    height: auto;
 }
@@ -116,18 +111,18 @@ label {
    width: 100%;
 }
 
-#links ul {
-   list-style-type: none;
-   padding-bottom: 20px;
-   text-align: left;
+#footer {
+   text-align: center;
 }
 
-#links a {
+#footer a {
+   color: #0091C2;
    text-decoration: none;
 }
 
-#footer p {
-   text-align: center;
+#footer i {
+   color: #0091C2;
+   font-size: 0.8rem;
 }
 
 /* Ticker Style */

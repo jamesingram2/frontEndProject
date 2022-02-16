@@ -5,7 +5,7 @@ export function tableOnClick() {
    for (let i = 0; i < table.rows.length; i++) {
       table.rows[i].addEventListener('click', function() {
          let coinKey = this.cells[1].innerText;
-         let headingName = this.cells[0].innerText;
+         let headingName = this.cells[2].innerText;
          visEl.innerHTML = `
             <h3><i class="bi bi-graph-up"></i> ${headingName} Historical Data</h3>
             <img src="./img/${coinKey.toLowerCase()}.png">
