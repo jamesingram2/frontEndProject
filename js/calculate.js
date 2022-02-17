@@ -2,9 +2,9 @@ export function calculate() {
     let calculatorResultsDiv = document.getElementById("calculatorResults");
     document.getElementById("calculate").addEventListener('click', calcFunction);
     document.getElementById('reset').addEventListener('click', function() {
-    calculatorResultsDiv.innerHTML = "";
-    window.location.reload();
-    })
+        calculatorResultsDiv.innerHTML = "";
+        window.location.reload();
+    });
 
     function calcFunction() {
         let currAmt = document.getElementById('currAmt').value;

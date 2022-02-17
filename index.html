@@ -69,9 +69,9 @@
                      </div>
                      <div class="text-center">
                         <!-- convert button -->
-                        <button id="calculate" class="btn btn-secondary convert m-2" type="button"><span class="buttonText">Convert</span></button>
+                        <button id="calculate" class="btn btn-secondary convert m-2" type="button">Convert</button>
                         <!-- reset button -->
-                        <button type="reset" id="reset" class="btn btn-secondary m-2"><span class="buttonText">Reset</span></button>
+                        <button type="reset" id="reset" class="btn btn-secondary m-2">Reset</button>
                      </div>
                   </div>
                   <div id="calculatorResults" class="text-center finalAmount">
@@ -105,13 +105,6 @@
                   </table>
             </div>
             <!-- dataTable div ends -->
-            <!-- graphs div begins -->
-            <div class="row" id="graphs">
-               <div id="graphsDiv">
-                  <h3 id="visTitle"><i class="bi bi-graph-up"></i> Historical Data</h3>
-               </div>
-            </div>
-            <!-- graphs div ends -->
          </div>
          <!-- left column ends -->
          <!-- right column begins -->
@@ -123,6 +116,24 @@
             <!-- news div ends -->
          </div>
          <!--right column ends-->
+                     <!-- graphs div begins -->
+                     <div class="row" id="graphs">
+                        <div id="graphsDiv">
+                           <h3 id="visTitle"><i class="bi bi-graph-up"></i> Historical Data</h3>
+                           <div class="col-6">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text">From</span>
+                              </div>
+                              <select id="tokenName" name="tokenName" class="form-control from">
+                                 <option selected="selected" disabled>Select One …</option>
+                                 </select>
+                              <button type="button" id="getHistory" class="btn btn-secondary convert m-2">Get History</button>
+                              <button type="reset" id="reset2" class="btn btn-secondary m-2">Reset</button>
+                           </div>
+                           </div>
+                        <div class="row js-plotly-plot" id="graph"></div>
+                     </div>
+                     <!-- graphs div ends -->
       </div>
       <div class="row">
          <!-- footer begins -->
@@ -140,6 +151,7 @@
    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
    <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+   <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
    <script type="module" src="./js/script.js"></script>
 </body>
 </html>

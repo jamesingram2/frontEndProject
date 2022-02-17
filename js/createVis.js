@@ -1,15 +1,28 @@
-export function tableOnClick() {
-   let visEl = document.getElementById("graphsDiv");
-   visEl.innerHTML += `<img src="./img/sample_graph.png">`;
-   let table = document.querySelector('table');
-   for (let i = 0; i < table.rows.length; i++) {
-      table.rows[i].addEventListener('click', function() {
-         let coinKey = this.cells[1].innerText;
-         let headingName = this.cells[2].innerText;
-         visEl.innerHTML = `
-            <h3><i class="bi bi-graph-up"></i> ${headingName} Historical Data</h3>
-            <img src="./img/${coinKey.toLowerCase()}.png">
-         `;
-      })
-   }
+export function fetchHistory() {
+   document.getElementById('reset2').addEventListener('click', function() {
+      document.getElementById("graph").innerHTML = "";
+   });
+   document.getElementById("getHistory").addEventListener('click', async function() {
+      let xArr = [];
+      let yArr = [];
+      let historyKey = document.getElementById("tokenName").value;
+      console.log(historyKey);
+      const response = await fetch(`https://api.coincap.io/v2/assets/${historyKey}/history?interval=d1`);
+      const data = await response.json();
+      const historyData = data.data;
+      for (let items of historyData) {
+         let x = items.priceUsd;
+         xArr.push(x);
+         let y = items.date
+         yArr.push(y);
+      }
+      let trace1 = {
+         y: xArr,
+         x: yArr,
+         type: 'scatter'
+      };
+      let dataPoints = [trace1]
+      Plotly.newPlot('graph', dataPoints);
+   })
 }
+fetchHistory()
