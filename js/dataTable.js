@@ -1,5 +1,6 @@
 export function tableFunction() {
    async function fetchTable() {
+   const tokenNameEl = document.getElementById("tokenName");
    const coin1El = document.getElementById("coin1");
    const coin2El = document.getElementById("coin2");
    const coinTableDIV = document.getElementById('tableBody');
@@ -32,8 +33,10 @@ export function tableFunction() {
       </tr>
       `;
       coinTableDIV.innerHTML += tempCoinHTNL;
+      tokenNameEl.innerHTML += `<option value=${name.toLowerCase()}>${name}</option>`;
       coin1El.innerHTML += `<option value="${symbol}">${symbol}</option>`;
       coin2El.innerHTML += `<option value="${symbol}">${symbol}</option>`;
+
 
    });
    $(document).ready(function() {
