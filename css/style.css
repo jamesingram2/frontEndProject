@@ -1,69 +1,112 @@
 html {
+   margin: 0;
+   padding: 0;
    position: relative;
-   min-height: 100%;
 }
 
 body {
    background-color: #fff;
    color: #0c0c0c;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   margin-bottom: 60px;
 }
 
 h1 {
-   background-color: #fff;
-   font-size: 5.5vw;
-   margin-top: 20px;
-   text-align: center;
+   font-size: 5vw;
 }
 
 h1 img {
-   height: 7.5vw;
-   display: inline-block;
-   margin-bottom: 8px;
+   height: 5vw;
 }
 
 h3 {
    font-size: 1.5rem;
    margin-top: 10px;
-   text-align: left;
+   margin-bottom: 10px;
+   /* text-align: center; */
 }
 
-h3 i {
-   font-size: 1.5rem;
+#header {
+   height: 110px;
+   margin-bottom: 10px;
+   padding: 20px;
+   text-align: center;
 }
 
-#exchange,
-#dataTable,
-#graphs,
-#news,
-#links {
+#ticker {
+   height: 60px;
+   margin-bottom: 20px;
+}
+
+#coinSelector {
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 0;
+}
+
+#center,
+#right {
+   margin-bottom: 20px;
+}
+
+.stats {
+   text-align: center;
+}
+
+.stats i {
+   font-size: 2.5rem;
+}
+
+#coinName,
+#coinRank,
+#coinSymbol,
+#coinPrice,
+#coinCap,
+#coinChange {
    background-color: #fff;
-   color: #0c0c0c;
-   margin-left: 10px;
-   margin-bottom: 30px;
+   border-radius: 25px;
+   color: #03475e;
+   margin-bottom: 20px;
+   padding: 20px;
+   text-align: center;
 }
 
-.main {
+#graphs {
+   margin-top: 0;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+#tempGraph img {
+   text-align: center;
+   width: 100%;
+}
+
+.page-item a {
+   color: #0091C2
+}
+
+.page-item a:hover {
+   color: #076382;
+}
+
+.calculator {
    margin: auto;
    padding-top: 20px;
    padding-bottom: 20px;
    width: 70%;
 }
 
-.main input {
+.calculator input {
    margin-top:10px;
    margin-bottom: 10px;
 }
-label {
-   font-size: 1rem;
-}
- 
+
 .btn {
    background-color: #fff;
-   border: 2px solid #0c0c0c;
+   border: 2px solid #03475e;
    border-radius: 15px;
-   color: #0c0c0c;
+   color: #03475e;
    width: 150px;
 }
 
@@ -73,98 +116,63 @@ label {
 }
 
 #calculatorResults {
-   margin-top: 50px;
-   margin-bottom: 20px;
+   margin-top: 20px;
 }
 
-#coinTable {
-   width: 100%;
-}
-
-#coinTable th {
-   background-color: #0c0c0c;
-   color: #fff;
-}  
-
-#coinTable th,
-#coinTable td {
-  /* font-size: 0.8rem; */
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
-}
-
-#coinTable tr:hover {
-  background-color: #ddd;
-  font-weight:bolder;
-  color: #0c0c0c;
-}
-
-#coinTable i {
-   font-size: 0.7rem;
-}
-
-.page-link {
-   color: #0091C2;
-}
-#graphs {
-   height: auto;
-}
-
-#graphs img {
-   width: 100%;
-}
-
-.footer {
-   position: absolute;
+#footer {
+   height: 60px;
+   line-height: 60px;
    bottom: 0;
-   margin-left: 0px;
-   width: 100%;
-   height: 60px; /* Set the fixed height of the footer here */
-   line-height: 60px; /* Vertically center the text there */
    text-align: center;
-   padding-left: 0;
-   }
+}
 
-.footer a {
+#footer a {
    color: #0091C2;
    text-decoration: none;
 }
 
-.footer i {
+#footer i {
    color: #0091C2;
    font-size: 0.8rem;
+}
+
+.coinList {
+   border: 0;
+   background-color: #fff;
+   color: #0091C2;
+   margin: 0;
+   padding: 0;
+   text-align: left;
 }
 
 /* Ticker Style */
 
    /* (A) FIXED WRAPPER */
-.hwrap {
-   overflow: hidden; /* HIDE SCROLL BAR */
-   background: #fff;
-   margin: 5px;
-   margin-bottom: 20px;
-}
-
-   /* (B) MOVING TICKER WRAPPER */
-.hmove { display: flex; }
-
-   /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
-.hitem {
-   flex-shrink: 10;
-   width: 100%;
-   box-sizing: border-box;
-   padding: 8px;
-   text-align: left;
-}
-
-   /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
-   /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
-@keyframes tickerh {
-   0% { transform: translate3d(33%, 0, 0); }
-   100% { transform: translate3d(-500%, 0, 0); }
-}
-.hmove { animation: tickerh linear 75s infinite; }
-.hmove:hover { animation-play-state: paused; }
+   .hwrap {
+      overflow: hidden; /* HIDE SCROLL BAR */
+      background: #fff;
+      margin: 5px;
+      margin-bottom: 20px;
+   }
+   
+      /* (B) MOVING TICKER WRAPPER */
+   .hmove { display: flex; }
+   
+      /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+   .hitem {
+      color:#03475e;
+      flex-shrink: 10;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+      text-align: left;
+   }
+   
+      /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+      /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+   @keyframes tickerh {
+      0% { transform: translate3d(33%, 0, 0); }
+      100% { transform: translate3d(-500%, 0, 0); }
+   }
+   .hmove { animation: tickerh linear 75s infinite; }
+   .hmove:hover { animation-play-state: paused; }
