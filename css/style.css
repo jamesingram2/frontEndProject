@@ -15,7 +15,7 @@ h1 {
 }
 
 h1 img {
-   height: 5vw;
+   height: 6vw;
 }
 
 h1 a {
@@ -78,12 +78,20 @@ h3 {
 #coinChange {
    background-color: #fff;
    border-radius: 25px;
-   color: #03475e;
+   color: #494848;
    margin-bottom: 20px;
    padding: 20px;
    text-align: center;
 }
 
+#coinName,
+#coinRank,
+#coinSymbol,
+#coinPrice,
+#coinCap,
+#coinChange i {
+   color: #03475e
+}
 #graphs {
    margin-top: 0;
    margin-bottom: 0;
@@ -177,7 +185,7 @@ h3 {
    
       /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
    .hitem {
-      color:#03475e;
+      color:#494848;
       flex-shrink: 10;
       width: 100%;
       box-sizing: border-box;
