@@ -18,6 +18,19 @@ h1 img {
    height: 5vw;
 }
 
+h1 a {
+   color:#0c0c0c;
+   text-decoration: none;
+}
+
+h1 a:hover {
+   color: #0c0c0c;
+}
+
+h1 a:visited {
+   color: #0c0c0c;
+}
+
 h3 {
    font-size: 1.5rem;
    margin-top: 10px;
