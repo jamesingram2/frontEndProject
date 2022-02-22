@@ -13,9 +13,7 @@ Built With
 Bootstrap
 
 
-Getting Started
-Go to app or site and indulge in all the latest crypto news.
-
+Getting Started; launch app with index.html!
 
 
 
