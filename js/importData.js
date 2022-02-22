@@ -4,17 +4,106 @@ export function importData() {
       const coinListEl = document.getElementsByClassName("coinList");
       const coin1El = document.getElementById('coin1');
       const coin2El = document.getElementById('coin2');
+      const comparator = document.getElementById('comparator');
       const response = await fetch("https://api.coincap.io/v2/assets");
 
       const data = await response.json();
       const coinList = data.data;
       coinList.forEach((coin) => {
+         let coinIcon = coin.symbol.toLowerCase()
+         switch (coin.symbol) {
+            case 'LUNA': coinIcon = 'generic'
+            break
+            case 'BUSD': coinIcon = 'generic'
+            break
+            case 'AVAX': coinIcon = 'generic'
+            break
+            case 'SHIB': coinIcon = 'generic'
+            break
+            case 'UST': coinIcon = 'generic'
+            break
+            case 'CRO': coinIcon = 'generic'
+            break
+            case 'FTT': coinIcon = 'generic'
+            break
+            case 'NEAR': coinIcon = 'generic'
+            break
+            case 'STETH': coinIcon = 'generic'
+            break
+            case 'FTM': coinIcon = 'generic'
+            break
+            case 'BTCB': coinIcon = 'generic'
+            break
+            case 'EGLD': coinIcon = 'generic'
+            break
+            case 'KLAY': coinIcon = 'generic'
+            break
+            case 'HBAR': coinIcon = 'generic'
+            break
+            case 'AXS': coinIcon = 'generic'
+            break
+            case 'FRAX': coinIcon = 'generic'
+            break
+            case 'HNT': coinIcon = 'generic'
+            break
+            case 'BTTOLD': coinIcon = 'generic'
+            break
+            case 'CAKE': coinIcon = 'generic'
+            break
+            case 'TTT': coinIcon = 'generic'
+            break
+            case 'FLOW': coinIcon = 'generic'
+            break
+            case 'GALA': coinIcon = 'generic'
+            break
+            case 'XEC': coinIcon = 'generic'
+            break
+            case 'QNT': coinIcon = 'generic'
+            break
+            case 'CVX': coinIcon = 'generic'
+            break
+            case 'KDA': coinIcon = 'generic'
+            break
+            case 'OKB': coinIcon = 'generic'
+            break
+            case 'CHZ': coinIcon = 'generic'
+            break
+            case 'CELO': coinIcon = 'generic'
+            break
+            case 'DFI': coinIcon = 'generic'
+            break
+            case 'USDP': coinIcon = 'generic'
+            break
+            case 'SCRT': coinIcon = 'generic'
+            break
+            case 'MINA': coinIcon = 'generic'
+            break
+            case 'AR': coinIcon = 'generic'
+            break
+            case 'TFUEL': coinIcon = 'generic'
+            break
+            case 'XYM': coinIcon = 'generic'
+            break
+            case 'ROSE': coinIcon = 'generic'
+            break
+            case 'CEL': coinIcon = 'generic'
+            break
+            case 'OMI': coinIcon = 'generic'
+            break
+            case 'KOK': coinIcon = 'generic'
+            break
+            case 'RUNE': coinIcon = 'generic'
+            break
+            case 'CCXX': coinIcon = 'generic'
+            break
+         }
          const tempCoinListHTML = `
-         <button name="${coin.symbol}" type="button" class="btn coinList" data-bs-dismiss="offcanvas" value="${coin.id}">${coin.name}</button><br>
+         <button name="${coin.symbol}" type="button" class="btn coinList" data-bs-dismiss="offcanvas" value="${coin.id}"><img class="coinIcon" src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${coinIcon}.png">${coin.name}</button><br>
          `;
          coinListDiv.innerHTML += tempCoinListHTML;
          coin1El.innerHTML += `<option value="${coin.priceUsd}">${coin.symbol}</option>`;
          coin2El.innerHTML += `<option value="${coin.priceUsd}">${coin.symbol}</option>`;
+         comparator.innerHTML += `<option value="${coin.name}">${coin.symbol}</option>`;
       })
    }
    fetchData();

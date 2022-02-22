@@ -57,6 +57,39 @@ h3 {
    margin-left: 0;
 }
 
+#mainButton {
+   width: 20%;
+   background-color: rgba(3,70,94,.07);
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+#mainButton:hover {
+   background-color: rgb(3,70,94);
+   border-color: gray;
+   font-size: 1.2rem;
+   margin-bottom: -.15rem;
+}
+
+.offcanvas-start {
+   width: 220px;
+}
+
+.offcanvas-title {
+   padding-left: 4px;
+   margin-top: 0px;
+   font-size: 1.66rem;
+}
+
+.offcanvas-body {
+   font-size: 32px;
+}
+
+.coinIcon {
+   padding-bottom: 6px;
+   padding-right: 10px;
+}
+
 #center,
 #right {
    margin-bottom: 20px;
@@ -79,15 +112,23 @@ h3 {
    background-color: #fff;
    border-radius: 25px;
    margin-bottom: 20px;
-   padding: 20px;
    text-align: center;
    color: #03475e;
 }
 
 #graphs {
    margin-top: 0;
-   margin-bottom: 0;
+   margin-bottom: 0px;
    text-align: center;
+}
+
+#graphNav {
+   margin-left: 12.5vw;
+}
+
+#compare {
+   padding-left: 20px;
+   width: 210px;
 }
 
 #tempGraph img {
@@ -157,9 +198,11 @@ h3 {
    border: 0;
    background-color: #fff;
    color: #0091C2;
-   margin: 0;
-   padding: 0;
    text-align: left;
+   width: 220px;
+   font-weight: bold;
+   font-size: 16px;
+   margin-left: -10px;
 }
 
 /* Ticker Style */
