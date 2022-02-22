@@ -40,7 +40,6 @@ export function importData() {
                let name = dataList.name;
                let rank = "#" + dataList.rank;
                let symbol = dataList.symbol;
-               console.log(symbol)
                setTimeout(function async () {
                   const newsframe = document.getElementById('newsframe');
                   let currency = `currencies=${symbol}&amp;`
