@@ -1,7 +1,6 @@
 html {
    margin: 0;
    padding: 0;
-   position: relative;
 }
 
 body {
@@ -11,11 +10,11 @@ body {
 }
 
 h1 {
-   font-size: 5vw;
+   font-size: 6vw;
 }
 
 h1 img {
-   height: 6vw;
+   max-width: 7vw;
 }
 
 h1 a {
@@ -35,19 +34,12 @@ h3 {
    font-size: 1.5rem;
    margin-top: 10px;
    margin-bottom: 10px;
-   /* text-align: center; */
 }
 
 #header {
-   height: 110px;
    margin-bottom: 10px;
    padding-top: 20px;
    text-align: center;
-}
-
-#ticker {
-   height: 60px;
-   margin-bottom: 20px;
 }
 
 #coinSelector {
@@ -58,7 +50,7 @@ h3 {
 }
 
 #mainButton {
-   width: 20%;
+   width: 200px;
    background-color: rgba(3,70,94,.07);
    font-size: 1.1rem;
    font-weight: bold;
@@ -97,6 +89,7 @@ h3 {
 
 .stats {
    text-align: center;
+   margin-bottom: 10px;
 }
 
 .stats i {
@@ -137,7 +130,8 @@ h3 {
 }
 
 .page-item a {
-   color: #0091C2
+   color: #0091C2;
+   cursor: pointer;
 }
 
 .page-item a:hover {
@@ -159,6 +153,7 @@ h3 {
 #calculatorResults {
    margin-bottom: 20px;
 }
+
 .btn {
    background-color: #fff;
    border: 2px solid #03475e;
