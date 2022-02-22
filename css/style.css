@@ -78,20 +78,12 @@ h3 {
 #coinChange {
    background-color: #fff;
    border-radius: 25px;
-   color: #494848;
    margin-bottom: 20px;
    padding: 20px;
    text-align: center;
+   color: #03475e;
 }
 
-#coinName,
-#coinRank,
-#coinSymbol,
-#coinPrice,
-#coinCap,
-#coinChange i {
-   color: #03475e
-}
 #graphs {
    margin-top: 0;
    margin-bottom: 0;
