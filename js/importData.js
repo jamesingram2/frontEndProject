@@ -26,6 +26,7 @@ export function importData() {
       for (let items of coinListEl) {
          items.addEventListener('click', function() {
             let coinKey = items.value;
+            let symbol = ''
             async function fetchCoinData() {
                const coinNameDiv = document.getElementById("coinName");
                const coinRankDiv = document.getElementById("coinRank");
@@ -39,6 +40,10 @@ export function importData() {
                let name = dataList.name;
                let rank = "#" + dataList.rank;
                let symbol = dataList.symbol;
+               console.log(symbol)
+               const news = document.getElementById('newsframe');
+               let currencies = `currencies=${symbol}&amp;`
+               news.src = `https://cryptopanic.com/widgets/news/?bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;${currencies}header_text_color=666&amp;link_color=0091C2&amp;news_feed=trending&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=CryptoPanic%20News`
                let price = +dataList.priceUsd;
                price = price.toFixed(2);
                price = "$" + price;
