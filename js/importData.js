@@ -71,6 +71,7 @@ export function importData() {
                   coinNameDiv.style.fontSize="1.25rem";
                   coinNameDiv.style.color="#fff";
                   coinNameDiv.style.backgroundColor="#03465e"
+                  coinNameDiv.style.marginBottom="0px";
                })
                coinNameDiv.addEventListener('mouseout', function() {
                   coinNameDiv.style = "";
@@ -80,6 +81,7 @@ export function importData() {
                   coinRankDiv.style.fontSize="1.25rem";
                   coinRankDiv.style.color="#fff";
                   coinRankDiv.style.backgroundColor="#03465e"
+                  coinRankDiv.style.marginBottom="0px";
                })
                coinRankDiv.addEventListener('mouseout', function() {
                   coinRankDiv.style = "";
@@ -89,6 +91,7 @@ export function importData() {
                   coinSymbolDiv.style.fontSize="1.25rem";
                   coinSymbolDiv.style.color="#fff";
                   coinSymbolDiv.style.backgroundColor="#03465e"
+                  coinSymbolDiv.style.marginBottom="0px";
                })
                coinSymbolDiv.addEventListener('mouseout', function() {
                   coinSymbolDiv.style = "";
@@ -98,6 +101,8 @@ export function importData() {
                   coinPriceDiv.style.fontSize="1.25rem";
                   coinPriceDiv.style.color="#fff";
                   coinPriceDiv.style.backgroundColor="#03465e"
+                  coinPriceDiv.style.marginBottom="0px";
+
                })
                coinPriceDiv.addEventListener('mouseout', function() {
                   coinPriceDiv.style = "";
@@ -107,6 +112,8 @@ export function importData() {
                   coinCapDiv.style.fontSize="1.25rem";
                   coinCapDiv.style.color="#fff";
                   coinCapDiv.style.backgroundColor="#03465e"
+                  coinCapDiv.style.marginBottom="0px";
+
                })
                coinCapDiv.addEventListener('mouseout', function() {
                   coinCapDiv.style = "";
@@ -116,6 +123,8 @@ export function importData() {
                   coinChangeDiv.style.fontSize="1.25rem";
                   coinChangeDiv.style.color="#fff";
                   coinChangeDiv.style.backgroundColor="#03465e"
+                  coinChangeDiv.style.marginBottom="0px";
+
                })
                coinChangeDiv.addEventListener('mouseout', function() {
                   coinChangeDiv.style = "";
