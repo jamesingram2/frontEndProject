@@ -104,7 +104,7 @@ h3 {
 #coinChange {
    background-color: #fff;
    border-radius: 25px;
-   margin-bottom: 20px;
+   padding: 20px;
    text-align: center;
    color: #03475e;
 }
