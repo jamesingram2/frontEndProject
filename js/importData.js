@@ -140,8 +140,13 @@ export function importData() {
                price = price.toFixed(2);
                price = "$" + price;
                let cap = +dataList.marketCapUsd;
-               cap = cap.toFixed(2);
-               cap = "$" + cap;
+               if (+cap >= 1000000 && +cap < 1000000000) {
+                  cap = +cap / 1000000;
+                  cap = `$${cap.toFixed(2)}M`;
+               } else if (+cap >= 1000000000) {
+                  cap = +cap / 1000000000;
+                  cap = `$${cap.toFixed(2)}B`
+               }
                let change = +dataList.changePercent24Hr;
                change = change.toFixed(4);
                change = change + "%";
