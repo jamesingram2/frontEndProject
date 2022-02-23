@@ -234,4 +234,3 @@ export function importData() {
    }, 1200)
    setTimeout(populateData, 800)
 }
-importData();
