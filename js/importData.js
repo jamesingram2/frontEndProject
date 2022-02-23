@@ -223,6 +223,10 @@ export function importData() {
          })
       }
    }
+   setTimeout(async function() {
+      let topCoin = document.getElementById('coinListDiv').firstElementChild
+      topCoin.click()
+   }, 1200)
    setTimeout(populateData, 800)
 }
 importData();
