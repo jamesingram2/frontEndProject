@@ -96,6 +96,8 @@ export function importData() {
             break
             case 'CCXX': coinIcon = 'generic'
             break
+            case 'ANC': coinIcon = 'generic'
+            break
          }
          const tempCoinListHTML = `
          <button name="${coin.symbol}" type="button" class="btn coinList" data-bs-dismiss="offcanvas" value="${coin.id}"><img class="coinIcon" src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${coinIcon}.png">${coin.name}</button><br>
