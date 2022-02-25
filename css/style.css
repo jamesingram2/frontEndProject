@@ -116,7 +116,7 @@ h3 {
 }
 
 #graphNav {
-   margin-left: 12.5vw;
+   text-align: center;
 }
 
 #compare {
@@ -127,6 +127,18 @@ h3 {
 #tempGraph img {
    text-align: center;
    width: 100%;
+}
+
+#graphCompare {
+   font-size: 0.8rem;
+}
+
+#comparator {
+   font-size: 0.8rem;
+}
+
+.page-item {
+   font-size: 0.8rem;
 }
 
 .page-item a {
@@ -220,7 +232,8 @@ h3 {
       width: 100%;
       box-sizing: border-box;
       padding: 8px;
-      text-align: left;
+      text-align: center;
+      font-size: 0.9rem;
    }
    
       /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */

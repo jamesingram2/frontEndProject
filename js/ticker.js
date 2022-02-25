@@ -11,7 +11,7 @@ export async function ticker() {
            tickerBar[0].innerHTML += tickerItem
        } else {
            let tickerItem = `
-               <div class="hitem"><span style="font-weight:bold">${coin.symbol}</span><span style="color:green;font-weight:bold"> (</span>${parseFloat(coin.changePercent24Hr).toFixed(2)}<span style="color:green;font-weight:bold">)</span></div>
+               <div class="hitem"><span style="font-weight:bold">${coin.symbol}</span><span style="color:limegreen;font-weight:bold"> (</span>${parseFloat(coin.changePercent24Hr).toFixed(2)}<span style="color:limegreen;font-weight:bold">)</span></div>
                `
            tickerBar[0].innerHTML += tickerItem
        }

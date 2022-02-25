@@ -134,7 +134,7 @@ export function importData() {
                setTimeout(function async () {
                   const newsframe = document.getElementById('newsframe');
                   let currency = `currencies=${symbol}&amp;`
-                  newsframe.src = `https://cryptopanic.com/widgets/news/?${currency}bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=CryptoPanic%20News`
+                  newsframe.src = `https://cryptopanic.com/widgets/news/?${currency}bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=Source:%20CryptoPanic`
                },500)
                let price = +dataList.priceUsd;
                price = price.toFixed(2);
