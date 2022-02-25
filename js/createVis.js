@@ -244,7 +244,7 @@ export function history() {
                title: titleName2 + periodTitle
             };
             Plotly.newPlot('graphs', dataPoints, layout);
-            if (comparator.value != 'Select One…') {
+            if (comparator.value != 'Select…') {
                compare()
             }
          })
