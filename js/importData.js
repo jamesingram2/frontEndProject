@@ -150,7 +150,7 @@ export function importData() {
                let change = +dataList.changePercent24Hr;
                change = change.toFixed(4);
                change = change + "%";
-               coinNameDiv.innerHTML = `Name<br><i class="bi bi-currency-exchange"></i><br>${name}`
+               coinNameDiv.innerHTML = `Name<br><i class="bi bi-person-circle"></i><br>${name}`
                coinRankDiv.innerHTML = `Rank<br><i class="bi bi-bar-chart"></i><br>${rank}`;
                coinSymbolDiv.innerHTML = `Symbol<br><i class="bi 
                bi-info-circle"></i><br>${symbol}`;
