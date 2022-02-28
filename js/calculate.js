@@ -17,6 +17,9 @@ export function calculate() {
       } else {
          if (coin1 !== coin2) {
             finalValue = ((+coin1 / +coin2) * +currAmt).toFixed(6);
+            if (+finalValue >= 1000) {
+               finalValue = Number(finalValue).toLocaleString();
+            }
             calculatorResultsDiv.innerHTML = `<h2>${finalValue}</h2>`;
          } else {
             alert(`Please enter two different currencies`);

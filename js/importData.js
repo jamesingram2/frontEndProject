@@ -138,28 +138,31 @@ export function importData() {
                },500)
                let price = +dataList.priceUsd;
                price = price.toFixed(2);
+               price = Number(price).toLocaleString();
                price = "$" + price;
                let cap = +dataList.marketCapUsd;
                if (+cap >= 1000000 && +cap < 1000000000) {
                   cap = +cap / 1000000;
-                  cap = `$${cap.toFixed(2)}M`;
+                  cap = cap.toFixed(2);
+                  cap = `$${cap}M`;
                } else if (+cap >= 1000000000) {
                   cap = +cap / 1000000000;
-                  cap = `$${cap.toFixed(2)}B`
+                  cap = cap.toFixed(2);
+                  cap = `$${cap}B`
                }
                let change = +dataList.changePercent24Hr;
                change = change.toFixed(4);
                change = change + "%";
-               coinNameDiv.innerHTML = `Name<br><i class="bi bi-person-circle"></i><br>${name}`
-               coinRankDiv.innerHTML = `Rank<br><i class="bi bi-bar-chart"></i><br>${rank}`;
+               coinNameDiv.innerHTML = `Name<br><i class="bi bi-person-circle"></i><br><h4>${name}</h4>`
+               coinRankDiv.innerHTML = `Rank<br><i class="bi bi-bar-chart"></i><br><h2>${rank}</h2>`;
                coinSymbolDiv.innerHTML = `Symbol<br><i class="bi 
-               bi-info-circle"></i><br>${symbol}`;
-               coinPriceDiv.innerHTML = `Price (USD)<br><i class="bi bi-currency-dollar"></i><br>${price}`;
-               coinCapDiv.innerHTML = `Market Cap<br><i class="bi bi-pie-chart"></i><br>${cap}`;
+               bi-info-circle"></i><br><h4>${symbol}</h4>`;
+               coinPriceDiv.innerHTML = `Price (USD)<br><i class="bi bi-currency-dollar"></i><br><h4>${price}</h4>`;
+               coinCapDiv.innerHTML = `Market Cap<br><i class="bi bi-pie-chart"></i><br><h4>${cap}</h4>`;
                if (+dataList.changePercent24Hr < 0) {
-                  coinChangeDiv.innerHTML = `24 Hr Change<br><i class="bi bi-arrow-down-circle"></i><br>${change}`;
+                  coinChangeDiv.innerHTML = `24 Hr Change<br><i class="bi bi-arrow-down-circle"></i><br><h4>${change}</h4>`;
                } else {
-                  coinChangeDiv.innerHTML = `24 Hr Change<br><i class="bi bi-arrow-up-circle"></i><br>${change}`
+                  coinChangeDiv.innerHTML = `24 Hr Change<br><i class="bi bi-arrow-up-circle"></i><br><h4>${change}</h4>`
                }
 
                coinNameDiv.addEventListener('mouseover', function() {
