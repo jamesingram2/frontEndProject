@@ -87,12 +87,12 @@ h3 {
    margin-bottom: 20px;
 }
 
-#globalRow {
+.globalRow {
    margin-bottom: 10px;
    text-align: center;
 }
 
-#globalRow i {
+.globalRow i {
    font-size: 4.5rem;
 }
 
