@@ -7,7 +7,7 @@ import { ticker } from "./ticker.js";
 
 fetchGlobalData();
 importData();
-setTimeout(history, 800);
+setTimeout(history, 1000);
 setTimeout(calculate, 1000);
 fetchNews();
 ticker();
