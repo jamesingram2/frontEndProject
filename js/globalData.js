@@ -27,7 +27,7 @@ export async function fetchGlobalData() {
    global2.innerHTML += `<i class="bi bi-check-circle"></i><br><h4>${upcomingICOsFormatted}</h4>`;
    global3.innerHTML += `<i class="bi bi-x-circle"></i><br><h4>${endedICOsFormated}</h4>`;
    if (globalMarketCapChange < 0) {
-      global4.innerHTML += `<i class="bi bi-arrow-down-circle"></i><h4>${globalMarketCapChange}</h4>%`;
+      global4.innerHTML += `<i class="bi bi-arrow-down-circle"></i><h4>${globalMarketCapChange}%</h4>`;
    } else {
       global4.innerHTML += `<i class="bi bi-arrow-up-circle"></i><br><h4>${globalMarketCapChange}%</h4>`;
    }
