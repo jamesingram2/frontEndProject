@@ -105,6 +105,7 @@ h3 {
    background-color: #fff;
    border-radius: 25px;
    color:#03475e;
+   font-size: 1.4vw;
    padding: 20px;
    text-align: center;
 }
@@ -126,9 +127,10 @@ h3 {
 #coinChange {
    background-color: #fff;
    border-radius: 25px;
+   color: #03475e;
+   font-size: 1.4vw;
    padding: 20px;
    text-align: center;
-   color: #03475e;
 }
 
 #graphs {
