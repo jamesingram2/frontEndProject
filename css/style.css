@@ -58,7 +58,6 @@ h3 {
 #mainButton:hover {
    font-size: 1.2rem;
    font-weight: 900;
-   /* margin-bottom: -.15rem; */
 }
 
 .offcanvas-start {
@@ -80,23 +79,18 @@ h3 {
    padding-right: 10px;
 }
 
-#center,
+#left,
 #right {
    margin-bottom: 20px;
 }
 
 .globalRow {
-   font-size: 1.2vw;
    margin-bottom: 10px;
    text-align: center;
 }
 
 .globalRow i {
-   font-size: 4.5vw;
-}
-
-.globalRow h4 {
-   font-size: 2vw;
+   font-size: 4.5rem;
 }
 
 #activeCurrencies,
@@ -113,6 +107,7 @@ h3 {
 
 #dataSummary {
    height: 500px;
+   margin-bottom: 0;
 }
 
 .stats {
@@ -134,6 +129,11 @@ h3 {
    border-radius: 25px;
    padding: 20px;
    text-align: center;
+}
+
+#dataVis {
+   height: 500px;
+   margin-bottom: 50px;
 }
 
 #graphs {
@@ -179,18 +179,17 @@ h3 {
 
 .calculator {
    margin: auto;
-   padding-top: 20px;
+   padding-top: 30px;
    padding-bottom: 20px;
-   width: 70%;
+   width: 100%;
 }
 
 .calculator input {
-   margin-top:10px;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
 }
 
 #calculatorResults {
-   margin-bottom: 20px;
+   margin-bottom: 30px;
 }
 
 .btn {
@@ -199,7 +198,7 @@ h3 {
    border-radius: 15px;
    color: #03475e;
    font-size: 1rem;
-   width: 200px;
+   width: 150px;
 }
 
 .btn:hover {
@@ -261,13 +260,13 @@ h3 {
    
    /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
    .hitem {
+      box-sizing: border-box;
       color:#494848;
       flex-shrink: 10;
-      width: 100%;
-      box-sizing: border-box;
+      font-size: 1rem;
       padding: 8px;
       text-align: center;
-      font-size: 0.9rem;
+      width: 100%;
    }
    
    /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */

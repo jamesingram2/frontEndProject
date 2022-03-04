@@ -134,7 +134,7 @@ export function importData() {
                setTimeout(function async () {
                   const newsframe = document.getElementById('newsframe');
                   let currency = `currencies=${symbol}&amp;`
-                  newsframe.src = `https://cryptopanic.com/widgets/news/?${currency}bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;posts_limit=5&amp;text_color=0c0c0c&amp;title=Source:%20CryptoPanic`
+                  newsframe.src = `https://cryptopanic.com/widgets/news/?${currency}bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=Source:%20CryptoPanic`
                },500)
                let price = +dataList.priceUsd;
                price = price.toFixed(2);
@@ -154,7 +154,7 @@ export function importData() {
                change = change.toFixed(4);
                change = change + "%";
                coinNameDiv.innerHTML = `Name<br><i class="bi bi-person-circle"></i><br><h4>${name}</h4>`
-               coinRankDiv.innerHTML = `Rank<br><i class="bi bi-bar-chart"></i><br><h2>${rank}</h2>`;
+               coinRankDiv.innerHTML = `Rank<br><i class="bi bi-bar-chart"></i><br><h4>${rank}</h4>`;
                coinSymbolDiv.innerHTML = `Symbol<br><i class="bi 
                bi-info-circle"></i><br><h4>${symbol}</h4>`;
                coinPriceDiv.innerHTML = `Price (USD)<br><i class="bi bi-currency-dollar"></i><br><h4>${price}</h4>`;
