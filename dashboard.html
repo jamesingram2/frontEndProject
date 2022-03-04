@@ -33,7 +33,7 @@
         <div class="row" id="main">
             <div class="row" id="coinSelector">
                 <div class="col-l2">
-                    <button id="mainButton" class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Select Token</button>
+                    <button id="mainButton" class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Select Token</button>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header">
                           <h3 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-currency-exchange"></i> Tokens</h3>
@@ -46,31 +46,6 @@
             </div>
             <!-- center div begins -->
             <div class="col-lg-8 col-sm-12" id="center">
-                <!-- Global data div begins -->
-                <h3><i class="bi bi-globe2"></i> Global Data</h3>
-                <div id="globalSummary">
-                    <div class="row globalRow">
-                        <div class="col-4" id="activeCurrencies">
-                            Active Currencies<br>
-                        </div>
-                        <div class="col-4" id="markets">
-                            Markets<br>
-                        </div>
-                        <div class="col-4" id="newICOs">
-                            Upcoming ICOs<br>
-                        </div>
-                        <div class="col-4" id="endICOs">
-                            Ending ICOs<br>
-                        </div>
-                        <div class="col-4" id="marketChange">
-                            Market Cap Change<br>
-                        </div>
-                        <div class="col-4" id="topMarketCap">
-                            Bitcoin Market Cap<br>
-                        </div>
-                    </div>
-                </div>
-                <!-- Global data div ends -->
                 <!-- Current data div begins-->
                 <h3><i class="bi bi-clipboard-data"></i> Current Data</h3>
                 <div id="dataSummary">
@@ -93,83 +68,37 @@
                         <div class="col-4" id="coinChange">24 Hr Change<br><i class="bi bi-dash-circle"></i><br>
                         </div>
                     </div>
-                    <!-- Current data div ends -->
-                    <!-- Historic data div begins -->
-                    <div id="dataVis">
-                        <h3><i class="bi bi-graph-up"></i> Historical Data</h3>
-                        <div class="col-12" id="graphs">
-                            <div class="col-12" id="tempGraph">
-                                <img id="placeholder" src="./img/placeholder-1024x683.png" alt="placeholder graph" style="padding-bottom:10px;">
-                            </div>
+                </div>
+                <!-- Current data div ends -->
+                <!-- Historic data div begins -->
+                <div id="dataVis">
+                    <h3><i class="bi bi-graph-up"></i> Historical Data</h3>
+                    <div class="col-12" id="graphs">
+                        <div class="col-12" id="tempGraph">
+                            <img id="placeholder" src="./img/placeholder-1024x683.png" alt="placeholder graph" style="padding-bottom:10px;">
                         </div>
-                        <!-- <div class="row"> -->
-                            <div class="col-12" id="graphNav">
-                                <nav aria-label="Graph Navigation">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item" id="year"><a class="page-link">Year</a></li>
-                                        <li class="page-item" id="month"><a class="page-link">Month</a></li>
-                                        <li class="page-item" id="week"><a class="page-link">Week</a></li>
-                                        <li class="page-item" id="day"><a class="page-link">Day</a></li>
-                                        <div id="compare" class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span id="graphCompare" class="input-group-text">Compare</span>
-                                            </div>
-                                            <select id="comparator" name="comparator" class="form-control from">
-                                                <option selected="selected" disabled>Select…</option>
-                                            </select>
-                                        </div>
-                                    </ul>
-                                 </nav>
-                            </div>
-                        <!-- </div> -->
                     </div>
-                    <!-- Historic data div ends -->
-                    <!-- Currency converter div begins -->
-                    <div id="exchange">
-                        <h3><i class="bi bi-calculator"></i> Currency Converter</h3>
-                  <div class="calculator">
-                     <div class="form-group">
-                        <label for="currAmt">
-                        Amount to Convert: 
-                        </label>
-                        <input type="number" class="form-control searchBox" placeholder="0.00" id="currAmt" name="currAmt">
-                     </div>
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <div class="input-group mb-3">
-                              <div class="input-group-prepend">
-                                 <span class="input-group-text">From</span>
-                              </div>
-                              <select id="coin1" name="coin1" class="form-control from">
-                                 <option selected="selected" disabled>Select One…</option>
-                                 <option value="1">USD</option>"
-                              </select>
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="input-group mb-3">
-                              <div class="input-group-prepend">
-                                 <span class="input-group-text">To</span>
-                              </div>
-                                 <select id="coin2" name="coin2" class="form-control to">
-                                    <option selected="selected" disabled>Select One…</option>
-                                    <option value ="1">USD</option>
-                                 </select>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="calculatorResults" class="text-center finalAmount">
-                     </div>
-                        <div class="text-center">
-                           <!-- convert button -->
-                           <button id="calculate" class="btn btn-secondary convert m-2" type="button">Convert</button>
-                           <!-- reset button -->
-                           <button type="reset" id="reset" class="btn btn-secondary m-2">Reset</button>
-                        </div>
-                     </div>
-                     <!-- Currency converter div ends -->
+                    <!-- <div class="row"> -->
+                    <div class="col-12" id="graphNav">
+                        <nav aria-label="Graph Navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item" id="year"><a class="page-link">Year</a></li>
+                                <li class="page-item" id="month"><a class="page-link">Month</a></li>
+                                <li class="page-item" id="week"><a class="page-link">Week</a></li>
+                                <li class="page-item" id="day"><a class="page-link">Day</a></li>
+                                <div id="compare" class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span id="graphCompare" class="input-group-text">Compare</span>
+                                    </div>
+                                    <select id="comparator" name="comparator" class="form-control from">
+                                        <option selected="selected" disabled>Select…</option>
+                                    </select>
+                                </div>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
+                <!-- Historic data div ends -->
             </div>
             <!-- center div ends -->
             <!-- right div begins -->
@@ -177,17 +106,87 @@
                 <h3><i class="bi bi-newspaper"></i> Crypto News</h3>
                 <div id="news">  
                 </div>
+                <!-- Currency converter div begins -->
+                <div id="exchange">
+                    <h3><i class="bi bi-calculator"></i> Currency Converter</h3>
+                    <div class="calculator">
+                    <div class="form-group">
+                        <label for="currAmt">
+                        Amount to Convert: 
+                        </label>
+                        <input type="number" class="form-control searchBox" placeholder="0.00" id="currAmt" name="currAmt">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">From</span>
+                            </div>
+                            <select id="coin1" name="coin1" class="form-control from">
+                                <option selected="selected" disabled>Select One…</option>
+                                <option value="1">USD</option>"
+                            </select>
+                        </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">To</span>
+                            </div>
+                                <select id="coin2" name="coin2" class="form-control to">
+                                    <option selected="selected" disabled>Select One…</option>
+                                    <option value ="1">USD</option>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="calculatorResults" class="text-center finalAmount">
+                    </div>
+                        <div class="text-center">
+                        <!-- convert button -->
+                        <button id="calculate" class="btn btn-outline-primary convert m-2" type="button">Convert</button>
+                        <!-- reset button -->
+                        <button type="reset" id="reset" class="btn btn-outline-primary m-2">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Currency converter div ends -->
             </div>
             <!-- right div ends -->
         </div>
+        <!-- Global data div begins -->
+        <h3><i class="bi bi-globe2"></i> Global Data</h3>
+        <div id="globalSummary">
+            <div class="row globalRow">
+                <div class="col-2" id="activeCurrencies">
+                    Active<br>Currencies<br>
+                </div>
+                <div class="col-2" id="markets">
+                    Number of<br>Markets<br>
+                </div>
+                <div class="col-2" id="newICOs">
+                    Upcoming<br>ICOs<br>
+                </div>
+                <div class="col-2" id="endICOs">
+                    Ending<br>ICOs<br>
+                </div>
+                <div class="col-2" id="marketChange">
+                    Market Cap<br>Change<br>
+                </div>
+                <div class="col-2" id="topMarketCap">
+                    Bitcoin<br>Market Cap<br>
+                </div>
+            </div>
+        </div>
+        <!-- Global data div ends -->
         <!-- footer begins -->
         <div class="row">
             <div class="col" id="footer">
                 <span class="text-muted">&copy; 2022 <i class="bi bi-link-45deg"></i><a href="https://github.com/jamesingram2/frontEndProject" target="_blank">GitHub </a> <i class="bi bi-link-45deg"></i><a href="https://docs.coincap.io/" target="_blank">CoinCap </a> <i class="bi bi-link-45deg"></i><a href="https://www.coingecko.com/en/api/documentation" target="_blank">CoinGecko</a> <i class="bi bi-caret-up-fill"></i><a href="#">Back to Top</a></span>
             </div>
-            </div>
         </div>
         <!-- footer ends -->
+        </div>
         <!-- main div ends -->
     </div> 
     <!-- container div ends --> 

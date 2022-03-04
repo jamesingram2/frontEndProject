@@ -51,20 +51,18 @@ h3 {
 
 #mainButton {
    width: 200px;
-   background-color: rgba(3,70,94,.07);
-   font-size: 1.1rem;
+   font-size: 1.2rem;
    font-weight: bold;
 }
 
 #mainButton:hover {
-   background-color: rgb(3,70,94);
-   border-color: gray;
    font-size: 1.2rem;
-   margin-bottom: -.15rem;
+   font-weight: 900;
+   /* margin-bottom: -.15rem; */
 }
 
 .offcanvas-start {
-   width: 220px;
+   width: 275px;
 }
 
 .offcanvas-title {
@@ -88,12 +86,17 @@ h3 {
 }
 
 .globalRow {
+   font-size: 1.2vw;
    margin-bottom: 10px;
    text-align: center;
 }
 
 .globalRow i {
-   font-size: 4.5rem;
+   font-size: 4.5vw;
+}
+
+h4 {
+   font-size: 2vw;
 }
 
 #activeCurrencies,
@@ -102,15 +105,18 @@ h3 {
 #endICOs,
 #marketChange,
 #topMarketCap {
-   background-color: #fff;
    border-radius: 25px;
-   color:#03475e;
-   font-size: 1.5vw;
+   color: #022835;
    padding: 20px;
    text-align: center;
 }
 
+#dataSummary {
+   height: 500px;
+}
+
 .stats {
+   color: #022835;
    text-align: center;
    margin-bottom: 10px;
 }
@@ -125,10 +131,7 @@ h3 {
 #coinPrice,
 #coinCap,
 #coinChange {
-   background-color: #fff;
    border-radius: 25px;
-   color: #03475e;
-   font-size: 1.5vw;
    padding: 20px;
    text-align: center;
 }
@@ -166,12 +169,12 @@ h3 {
 }
 
 .page-item a {
-   color: #0091C2;
+   color: #03475e;
    cursor: pointer;
 }
 
 .page-item a:hover {
-   color: #076382;
+   color: #0c0c0c;
 }
 
 .calculator {
@@ -192,10 +195,17 @@ h3 {
 
 .btn {
    background-color: #fff;
-   border: 2px solid #03475e;
+   border: 2px solid #0c0c0c;
    border-radius: 15px;
    color: #03475e;
-   width: 150px;
+   font-size: 1rem;
+   width: 200px;
+}
+
+.btn:hover {
+   background-color: rgb(3,70,94);
+   color: #fff;
+   font-weight:900;
 }
 
 .finalAmount h2 {
@@ -216,19 +226,19 @@ h3 {
 }
 
 #footer a {
-   color: #0091C2;
+   color: #03475e;
    text-decoration: none;
 }
 
 #footer i {
-   color: #0091C2;
+   color: #03475e;
    font-size: 0.8rem;
 }
 
 .coinList {
    border: 0;
    background-color: #fff;
-   color: #0091C2;
+   color: #03475e;
    text-align: left;
    width: 220px;
    font-weight: bold;
@@ -246,10 +256,10 @@ h3 {
       margin-bottom: 20px;
    }
    
-      /* (B) MOVING TICKER WRAPPER */
+   /* (B) MOVING TICKER WRAPPER */
    .hmove { display: flex; }
    
-      /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+   /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
    .hitem {
       color:#494848;
       flex-shrink: 10;
@@ -260,11 +270,12 @@ h3 {
       font-size: 0.9rem;
    }
    
-      /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
-      /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+   /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+   /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
    @keyframes tickerh {
       0% { transform: translate3d(33%, 0, 0); }
       100% { transform: translate3d(-500%, 0, 0); }
    }
+
    .hmove { animation: tickerh linear 75s infinite; }
    .hmove:hover { animation-play-state: paused; }
