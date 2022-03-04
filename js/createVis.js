@@ -34,13 +34,24 @@ export function history() {
             let trace = {
                x: xArr,
                y: yArr,
-               type: 'scatter'
+               name: `${coinKey}`,
+               type: 'scatter',
+               line: {
+                  color: "#0091C2",
+                  width: 2
+               }
             };
             let dataPoints = [trace]
             let titleName = `${coinKey}`;
             let titleName2 = titleName.charAt(0).toUpperCase() + titleName.slice(1);
             let layout = {
-               title: titleName2 + periodTitle
+               title: titleName2 + periodTitle,
+               xaxis: {
+                  title: 'Time'
+               },
+               yaxis: {
+                  title: 'Price (USD)'
+               }
             };
             Plotly.newPlot('graphs', dataPoints, layout);
             comparator.addEventListener("change", async function() {
@@ -62,12 +73,22 @@ export function history() {
                let trace1 = {
                   x: xArr1,
                   y: yArr1,
-                  type: 'scatter'
+                  name: `${coinKey}`,
+                  type: 'scatter',
+                  line: {
+                     color: "#0091C2",
+                     width: 2
+                  }
                };
                let trace2 = {
                   x: xArr2,
                   y: yArr2,
-                  type: 'scatter'
+                  name: `${comparator}`,
+                  type: 'scatter',
+                  line: {
+                     color: "#FF0000",
+                     width: 2
+                  }
                };
                let dataPoints = [trace1,trace2]
                let titleName = `${coinKey}`;
@@ -75,7 +96,13 @@ export function history() {
                let titleName3 = `${comparator}`;
                let titleName4 = titleName3.charAt(0).toUpperCase() + titleName3.slice(1);
                let layout = {
-                  title: titleName2 + " vs " + titleName4 + periodTitle
+                  title: titleName2 + " vs " + titleName4 + periodTitle,
+                  xaxis: {
+                     title: 'Time'
+                  },
+                  yaxis: {
+                     title: 'Price (USD)'
+                  }
                };
                Plotly.newPlot('graphs', dataPoints, layout);
             })
@@ -99,12 +126,22 @@ export function history() {
             let trace1 = {
                x: xArr1,
                y: yArr1,
-               type: 'scatter'
+               name: `${coinKey}`,
+               type: 'scatter',
+               line: {
+                  color: "#0091C2",
+                  width: 2
+               }
             };
             let trace2 = {
                x: xArr2,
                y: yArr2,
-               type: 'scatter'
+               name: `${comparator}`,
+               type: 'scatter',
+               line: {
+                  color: "#FF0000",
+                  width: 2
+               }
             };
             let dataPoints = [trace1,trace2]
             let titleName = `${coinKey}`;
@@ -112,7 +149,13 @@ export function history() {
             let titleName3 = `${comparator}`;
             let titleName4 = titleName3.charAt(0).toUpperCase() + titleName3.slice(1);
             let layout = {
-               title: titleName2 + " vs " + titleName4 + periodTitle
+               title: titleName2 + " vs " + titleName4 + periodTitle,
+               xaxis: {
+                  title: 'Time'
+               },
+               yaxis: {
+                  title: 'Price (USD)'
+               }
             };
             Plotly.newPlot('graphs', dataPoints, layout);
          }
@@ -136,13 +179,24 @@ export function history() {
             let trace = {
                x: xArr,
                y: yArr,
-               type: 'scatter'
+               name: `${coinKey}`,
+               type: 'scatter',
+               line: {
+                  color: "#0091C2",
+                  width: 2
+               }
             };
             let dataPoints = [trace]
             let titleName = `${coinKey}`;
             let titleName2 = titleName.charAt(0).toUpperCase() + titleName.slice(1);
             let layout = {
-               title: titleName2 + " (One Year)"
+               title: titleName2 + " (One Year)",
+               xaxis: {
+                  title: 'Time'
+               },
+               yaxis: {
+                  title: 'Price (USD)'
+               }
             };
             Plotly.newPlot('graphs', dataPoints, layout);
             if (comparator.value != 'Select One…') {
@@ -169,13 +223,24 @@ export function history() {
             let trace = {
                x: xArr,
                y: yArr,
-               type: 'scatter'
+               name: `${coinKey}`,
+               type: 'scatter',
+               line: {
+                  color: "#0091C2",
+                  width: 2
+               }
             };
             let dataPoints = [trace]
             let titleName = `${coinKey}`;
             let titleName2 = titleName.charAt(0).toUpperCase() + titleName.slice(1);
             let layout = {
-               title: titleName2 + " (One Month)"
+               title: titleName2 + " (One Month)",
+               xaxis: {
+                  title: 'Time'
+               },
+               yaxis: {
+                  title: 'Price (USD)'
+               }
             };
             Plotly.newPlot('graphs', dataPoints, layout);
             if (comparator.value != 'Select One…') {
@@ -202,13 +267,24 @@ export function history() {
             let trace = {
                x: xArr,
                y: yArr,
-               type: 'scatter'
+               name: `${coinKey}`,
+               type: 'scatter',
+               line: {
+                  color: "#0091C2",
+                  width: 2
+               }
             };
             let dataPoints = [trace]
             let titleName = `${coinKey}`;
             let titleName2 = titleName.charAt(0).toUpperCase() + titleName.slice(1);
             let layout = {
-               title: titleName2 + " (One Week)"
+               title: titleName2 + " (One Week)",
+               xaxis: {
+                  title: 'Time'
+               },
+               yaxis: {
+                  title: 'Price (USD)'
+               }
             };
             Plotly.newPlot('graphs', dataPoints, layout);
             if (comparator.value != 'Select One…') {
@@ -235,13 +311,23 @@ export function history() {
             let trace = {
                x: xArr,
                y: yArr,
-               type: 'scatter'
+               type: 'scatter',
+               line: {
+                  color: "#0091C2",
+                  width: 2
+               }
             };
             let dataPoints = [trace]
             let titleName = `${coinKey}`;
             let titleName2 = titleName.charAt(0).toUpperCase() + titleName.slice(1);
             let layout = {
-               title: titleName2 + periodTitle
+               title: titleName2 + periodTitle,
+               xaxis: {
+                  title: 'Time'
+               },
+               yaxis: {
+                  title: 'Price (USD)'
+               }
             };
             Plotly.newPlot('graphs', dataPoints, layout);
             if (comparator.value != 'Select…') {
