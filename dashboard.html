@@ -44,8 +44,33 @@
                 </div>
                 </div>
             </div>
-            <!-- center div begins -->
-            <div class="col-lg-8 col-sm-12" id="center">
+            <!-- left div begins -->
+            <div class="col-lg-8 col-sm-12" id="left">
+                <!-- Global data div begins -->
+                <h3><i class="bi bi-globe2"></i> Global Data</h3>
+                <div id="globalSummary">
+                    <div class="row globalRow">
+                        <div class="col-4" id="activeCurrencies">
+                            Active<br>Currencies<br>
+                        </div>
+                        <div class="col-4" id="markets">
+                            Number of<br>Markets<br>
+                        </div>
+                        <div class="col-4" id="newICOs">
+                            Upcoming<br>ICOs<br>
+                        </div>
+                        <div class="col-4" id="endICOs">
+                            Ending<br>ICOs<br>
+                        </div>
+                        <div class="col-4" id="marketChange">
+                            Market Cap<br>Change<br>
+                        </div>
+                        <div class="col-4" id="topMarketCap">
+                            Bitcoin<br>Market Cap<br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Global data div ends -->
                 <!-- Current data div begins-->
                 <h3><i class="bi bi-clipboard-data"></i> Current Data</h3>
                 <div id="dataSummary">
@@ -78,7 +103,6 @@
                             <img id="placeholder" src="./img/placeholder-1024x683.png" alt="placeholder graph" style="padding-bottom:10px;">
                         </div>
                     </div>
-                    <!-- <div class="row"> -->
                     <div class="col-12" id="graphNav">
                         <nav aria-label="Graph Navigation">
                             <ul class="pagination justify-content-center">
@@ -100,7 +124,7 @@
                 </div>
                 <!-- Historic data div ends -->
             </div>
-            <!-- center div ends -->
+            <!-- left div ends -->
             <!-- right div begins -->
             <div class="col-lg-4" id="right">
                 <h3><i class="bi bi-newspaper"></i> Crypto News</h3>
@@ -117,7 +141,7 @@
                         <input type="number" class="form-control searchBox" placeholder="0.00" id="currAmt" name="currAmt">
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 col-sm-6">
+                        <div class="col">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">From</span>
@@ -128,7 +152,7 @@
                             </select>
                         </div>
                         </div>
-                        <div class="col-lg-12 col-sm-6">
+                        <div class="col">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">To</span>
@@ -154,31 +178,6 @@
             </div>
             <!-- right div ends -->
         </div>
-        <!-- Global data div begins -->
-        <h3><i class="bi bi-globe2"></i> Global Data</h3>
-        <div id="globalSummary">
-            <div class="row globalRow">
-                <div class="col-2" id="activeCurrencies">
-                    Active<br>Currencies<br>
-                </div>
-                <div class="col-2" id="markets">
-                    Number of<br>Markets<br>
-                </div>
-                <div class="col-2" id="newICOs">
-                    Upcoming<br>ICOs<br>
-                </div>
-                <div class="col-2" id="endICOs">
-                    Ending<br>ICOs<br>
-                </div>
-                <div class="col-2" id="marketChange">
-                    Market Cap<br>Change<br>
-                </div>
-                <div class="col-2" id="topMarketCap">
-                    Bitcoin<br>Market Cap<br>
-                </div>
-            </div>
-        </div>
-        <!-- Global data div ends -->
         <!-- footer begins -->
         <div class="row">
             <div class="col" id="footer">
